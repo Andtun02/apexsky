@@ -1632,7 +1632,7 @@ int main(int argc, char *argv[]) {
       std::this_thread::sleep_for(std::chrono::seconds(2));
       puts(xorstr_("Searching for apex process..."));
 
-      apex_mem.open_proc(xorstr_("r5apex.exe"));
+      apex_mem.open_proc(xorstr_("r5apex_dx12.exe"));
 
       if (apex_mem.get_proc_status() == process_status::FOUND_READY) {
         g_Base = apex_mem.get_proc_baseaddr();
